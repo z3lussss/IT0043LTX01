@@ -1,0 +1,1434 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: 0.5s all ease;
+}
+
+nav {
+    background-color: black;
+    height: fit-content;
+    color: white;
+    padding: 10px;
+}
+
+.navcontainer {
+    width: 90vw;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+nav .navcontainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li {
+    height: 100%;
+    list-style: none;
+    margin-left: 20px;
+    margin-top: 3px;
+    font-weight: 600;
+}
+
+.selected {
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+nav a {
+    height: 100%;
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    color: #bd21ff;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+}
+
+.seriescontainer {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(bg.webp);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+#x,
+#y,
+#z {
+    box-shadow: 5px 10px 10px;
+    border-radius: 7%;
+    margin: 15px;
+}
+
+.xlogo {
+    position: absolute;
+    width: 170px;
+    margin: 30px;
+}
+
+.first {
+    position: relative;
+    display: inline-block;
+}
+
+.first button {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #E50914;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px 10px black;
+}
+
+.first button:hover {
+    background-color: white;
+    color: #E50914;
+    box-shadow: 0 9px 10px black;
+}
+
+.first button:active {
+    background-color: #E50914;
+    box-shadow: 0 9px 10px black;
+    transform: translateY(4px);
+}
+
+.ylogo {
+    position: absolute;
+    width: 150px;
+    margin: 30px;
+}
+
+.second {
+    position: relative;
+    display: inline-block;
+}
+
+.second button {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #E50914;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px 10px black;
+}
+
+.second button:hover {
+    background-color: white;
+    color: #E50914;
+}
+
+.second button:active {
+    background-color: #E50914;
+    box-shadow: 0 9px 10px black;
+    transform: translateY(4px);
+}
+
+.zlogo {
+    position: absolute;
+    width: 165px;
+    margin: 30px;
+}
+
+.third {
+    position: relative;
+    display: inline-block;
+}
+
+.third button {
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    color: #fff;
+    background-color: #E50914;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 9px 10px black;
+}
+
+.third button:hover {
+    background-color: white;
+    color: #E50914;
+}
+
+.third button:active {
+    background-color: #E50914;
+    box-shadow: 0 9px 10px black;
+    transform: translateY(4px);
+}
+
+.charcontainer {
+    display: flex;
+    justify-content: space-between;
+    background-image: url(ovb.jpg);
+    background-position: center;
+    border: goldenrod 10px solid;
+
+}
+
+.char1,
+.char2,
+.char3 {
+    background-image: url(card.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 3%;
+    box-shadow: 0 9px 10px black;
+    margin: 52px;
+    margin-left: 30;
+    margin-right: 30;
+}
+
+.yugi {
+    height: 500;
+    position: absolute;
+
+}
+
+.jaden {
+    height: 500;
+    position: absolute;
+}
+
+.yusei {
+    height: 500;
+    position: absolute;
+}
+
+.deck {
+    display: flex;
+    justify-content: space-between;
+}
+
+.yc1,
+.yc2,
+.yc3 {
+    width: 100px;
+    position: relative;
+    margin: 28;
+    margin-top: 325;
+    box-shadow: 9px 9px 10px;
+}
+
+.jc1,
+.jc2,
+.jc3 {
+    width: 100px;
+    position: relative;
+    margin: 28;
+    margin-top: 325;
+    box-shadow: 9px 9px 10px;
+}
+
+.fc1,
+.fc2,
+.fc3 {
+    width: 100px;
+    position: relative;
+    margin: 28;
+    margin-top: 325;
+    box-shadow: 9px 9px 10px;
+}
+
+.newcard {
+    background-color: black;
+    width: 200;
+    margin-top: 55;
+    margin-bottom: 50;
+    box-shadow: 0 9px 10px black;
+    border-radius: 3%;
+}
+
+.ncdesc {
+    color: white;
+    margin: 10px;
+    text-align: justify;
+}
+
+h2 {
+    color: white;
+    font-size: medium;
+    text-align: center;
+}
+
+.ncard {
+    width: 125px;
+    margin: 10px;
+}
+
+.trivia {
+    background-color: black;
+    width: 200;
+    margin-top: 55;
+    margin-bottom: 50;
+    box-shadow: 0 9px 10px black;
+    border-radius: 3%;
+}
+
+.th2 {
+    margin-top: 10px;
+}
+
+.tdesc {
+    color: white;
+    margin: 10px;
+    text-align: justify;
+
+}
+
+@media (max-width: 1000px) {
+    nav {
+        background-color: black;
+        height: fit-content;
+        color: white;
+        padding: 10px;
+    }
+
+    .navcontainer {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    nav .navcontainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        height: 100%;
+        list-style: none;
+        margin-left: 20px;
+        margin-top: 3px;
+        font-weight: 600;
+    }
+
+    .selected {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    nav a {
+        height: 100%;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    nav a:hover {
+        color: #bd21ff;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    .seriescontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(bg.webp);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    #x,
+    #y,
+    #z {
+        box-shadow: 5px 10px 10px;
+        border-radius: 7%;
+        margin: 15px;
+    }
+
+    .xlogo {
+        position: absolute;
+        width: 170px;
+        margin: 30px;
+    }
+
+    .first {
+        position: relative;
+        display: inline-block;
+    }
+
+    .first button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .first button:hover {
+        background-color: white;
+        color: #E50914;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .first button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .ylogo {
+        position: absolute;
+        width: 150px;
+        margin: 30px;
+    }
+
+    .second {
+        position: relative;
+        display: inline-block;
+    }
+
+    .second button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .second button:hover {
+        background-color: white;
+        color: #E50914;
+    }
+
+    .second button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .zlogo {
+        position: absolute;
+        width: 165px;
+        margin: 30px;
+    }
+
+    .third {
+        position: relative;
+        display: inline-block;
+    }
+
+    .third button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .third button:hover {
+        background-color: white;
+        color: #E50914;
+    }
+
+    .third button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .charcontainer {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(ovb.jpg);
+        background-position: center;
+        border: goldenrod 10px solid;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .char1,
+    .char2,
+    .char3 {
+        background-image: url(card.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 3%;
+        box-shadow: 0 9px 10px black;
+        margin: 52px;
+        margin-left: 30;
+        margin-right: 30;
+    }
+
+    .yugi {
+        height: 500;
+        position: absolute;
+
+    }
+
+    .jaden {
+        height: 500;
+        position: absolute;
+    }
+
+    .yusei {
+        height: 500;
+        position: absolute;
+    }
+
+    .deck {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .yc1,
+    .yc2,
+    .yc3 {
+        width: 100px;
+        position: relative;
+        margin: 28;
+        margin-top: 325;
+        box-shadow: 9px 9px 10px;
+    }
+
+    .jc1,
+    .jc2,
+    .jc3 {
+        width: 100px;
+        position: relative;
+        margin: 28;
+        margin-top: 325;
+        box-shadow: 9px 9px 10px;
+    }
+
+    .fc1,
+    .fc2,
+    .fc3 {
+        width: 100px;
+        position: relative;
+        margin: 28;
+        margin-top: 325;
+        box-shadow: 9px 9px 10px;
+    }
+
+    nav {
+        background-color: black;
+        height: fit-content;
+        color: white;
+        padding: 10px;
+    }
+
+    .navcontainer {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    nav .navcontainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        height: 100%;
+        list-style: none;
+        margin-left: 20px;
+        margin-top: 3px;
+        font-weight: 600;
+    }
+
+    .selected {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    nav a {
+        height: 100%;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    nav a:hover {
+        color: #bd21ff;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    .seriescontainer {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(bg.webp);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    #x,
+    #y,
+    #z {
+        box-shadow: 5px 10px 10px;
+        border-radius: 7%;
+        margin: 15px;
+    }
+
+    .xlogo {
+        position: absolute;
+        width: 170px;
+        margin: 30px;
+    }
+
+    .first {
+        position: relative;
+        display: inline-block;
+    }
+
+    .first button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .first button:hover {
+        background-color: white;
+        color: #E50914;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .first button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .ylogo {
+        position: absolute;
+        width: 150px;
+        margin: 30px;
+    }
+
+    .second {
+        position: relative;
+        display: inline-block;
+    }
+
+    .second button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .second button:hover {
+        background-color: white;
+        color: #E50914;
+    }
+
+    .second button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .zlogo {
+        position: absolute;
+        width: 165px;
+        margin: 30px;
+    }
+
+    .third {
+        position: relative;
+        display: inline-block;
+    }
+
+    .third button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .third button:hover {
+        background-color: white;
+        color: #E50914;
+    }
+
+    .third button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .charcontainer {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(ovb.jpg);
+        background-position: center;
+        border: goldenrod 10px solid;
+
+    }
+
+    .char1,
+    .char2,
+    .char3 {
+        background-image: url(card.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 3%;
+        box-shadow: 0 9px 10px black;
+        margin: 52px;
+        margin-left: 30;
+        margin-right: 30;
+    }
+
+    .yugi {
+        height: 500;
+        position: absolute;
+
+    }
+
+    .jaden {
+        height: 500;
+        position: absolute;
+    }
+
+    .yusei {
+        height: 500;
+        position: absolute;
+    }
+
+    .deck {
+        display: flex;
+        justify-content: center;
+    }
+
+    .yc1,
+    .yc2,
+    .yc3 {
+        width: 100px;
+        position: relative;
+        margin-top: 325;
+        box-shadow: 9px 9px 10px;
+    }
+
+    .jc1,
+    .jc2,
+    .jc3 {
+        width: 100px;
+        position: relative;
+
+        margin-top: 325;
+        box-shadow: 9px 9px 10px;
+    }
+
+    .fc1,
+    .fc2,
+    .fc3 {
+        width: 100px;
+        position: relative;
+
+        margin-top: 325;
+        box-shadow: 9px 9px 10px;
+    }
+
+    .newcard {
+        background-color: black;
+        width: 850;
+        margin-top: 55;
+        margin-bottom: 50;
+        margin-left: 35;
+        box-shadow: 0 9px 10px black;
+        border-radius: 3%;
+
+    }
+
+    .ncdesc {
+        color: white;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    h2 {
+        color: white;
+        font-size: medium;
+        text-align: center;
+    }
+
+    .ncard {
+        width: 125px;
+        margin: 10px;
+        margin-left: 360;
+    }
+
+    .trivia {
+        background-color: black;
+        width: 850;
+        margin-top: 55;
+        margin-bottom: 50;
+        margin-left: 35;
+        box-shadow: 0 9px 10px black;
+        border-radius: 3%;
+    }
+
+    .th2 {
+        margin-top: 10px;
+    }
+
+    .tdesc {
+        color: white;
+        margin: 10px;
+        text-align: justify;
+
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    nav {
+        background-color: black;
+        height: fit-content;
+        color: white;
+        padding: 10px;
+    }
+
+    .navcontainer {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    nav .navcontainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        height: 100%;
+        list-style: none;
+        margin-left: 20px;
+        margin-top: 3px;
+        font-weight: 600;
+    }
+
+    .selected {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    nav a {
+        height: 100%;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    nav a:hover {
+        color: #bd21ff;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    .seriescontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-image: url(bg.webp);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+        
+    }
+
+    #x,
+    #y,
+    #z {
+        display: flex;
+        box-shadow: 5px 10px 10px;
+        border-radius: 7%;
+        margin: 15px;
+        width:350px;
+    }
+
+    .xlogo {
+        position: absolute;
+        width: 170px;
+        margin: 30px;
+    }
+
+    .first {
+        position: relative;
+        display: inline-block;
+    }
+
+    .first button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .first button:hover {
+        background-color: white;
+        color: #E50914;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .first button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .ylogo {
+        position: absolute;
+        width: 150px;
+        margin: 30px;
+    }
+
+    .second {
+        position: relative;
+        display: inline-block;
+    }
+
+    .second button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .second button:hover {
+        background-color: white;
+        color: #E50914;
+    }
+
+    .second button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .zlogo {
+        position: absolute;
+        width: 165px;
+        margin: 30px;
+    }
+
+    .third {
+        position: relative;
+        display: inline-block;
+    }
+
+    .third button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .third button:hover {
+        background-color: white;
+        color: #E50914;
+    }
+
+    .third button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .charcontainer {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(ovb.jpg);
+        background-position: center;
+        border: goldenrod 10px solid;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .char1,
+    .char2,
+    .char3 {
+        background-image: url(card.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 3%;
+        box-shadow: 0 9px 10px black;
+        margin: 52px;
+        margin-left: 30;
+        margin-right: 30;
+    }
+
+    .yugi {
+        height: 500;
+        position: absolute;
+        width: 350;
+
+    }
+
+    .jaden {
+        height: 500;
+        position: absolute;
+        width: 350;
+    }
+
+    .yusei {
+        height: 500;
+        position: absolute;
+        width: 350;
+    }
+
+    .deck {
+        display: flex;
+        justify-content: space-between;
+        
+    }
+
+    
+    nav {
+        background-color: black;
+        height: fit-content;
+        color: white;
+        padding: 10px;
+    }
+
+    .navcontainer {
+        width: 90vw;
+        margin: 0 auto;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+        font-weight: 800;
+    }
+
+    nav .navcontainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: flex;
+    }
+
+    nav li {
+        height: 100%;
+        list-style: none;
+        margin-left: 20px;
+        margin-top: 3px;
+        font-weight: 600;
+    }
+
+    .selected {
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    nav a {
+        height: 100%;
+        padding: 5px;
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+    nav a:hover {
+        color: #bd21ff;
+        text-decoration: underline;
+        text-underline-offset: 7px;
+    }
+
+    .seriescontainer {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(bg.webp);
+        background-position: center;
+        background-size: cover;
+        position: relative;
+    }
+
+    #x,
+    #y,
+    #z {
+        box-shadow: 5px 10px 10px;
+        border-radius: 7%;
+        margin: 15px;
+    }
+
+    .xlogo {
+        position: absolute;
+        width: 170px;
+        margin: 30px;
+    }
+
+    .first {
+        position: relative;
+        display: inline-block;
+    }
+
+    .first button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .first button:hover {
+        background-color: white;
+        color: #E50914;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .first button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .ylogo {
+        position: absolute;
+        width: 150px;
+        margin: 30px;
+    }
+
+    .second {
+        position: relative;
+        display: inline-block;
+    }
+
+    .second button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .second button:hover {
+        background-color: white;
+        color: #E50914;
+    }
+
+    .second button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .zlogo {
+        position: absolute;
+        width: 165px;
+        margin: 30px;
+    }
+
+    .third {
+        position: relative;
+        display: inline-block;
+    }
+
+    .third button {
+        position: absolute;
+        top: 75%;
+        left: 40%;
+        padding: 10px 15px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #E50914;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 0 9px 10px black;
+    }
+
+    .third button:hover {
+        background-color: white;
+        color: #E50914;
+    }
+
+    .third button:active {
+        background-color: #E50914;
+        box-shadow: 0 9px 10px black;
+        transform: translateY(4px);
+    }
+
+    .charcontainer {
+        display: flex;
+        justify-content: space-between;
+        background-image: url(ovb.jpg);
+        background-position: center;
+        border: goldenrod 10px solid;
+
+    }
+
+    .char1,
+    .char2,
+    .char3 {
+        background-image: url(card.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 3%;
+        box-shadow: 0 9px 10px black;
+        margin: 52px;
+        margin-left: 30;
+        margin-right: 30;
+    }
+
+    .yugi {
+        height: 500;
+        position: absolute;
+
+    }
+
+    .jaden {
+        height: 500;
+        position: absolute;
+    }
+
+    .yusei {
+        height: 500;
+        position: absolute;
+    }
+
+    .deck {
+        display: flex;
+        justify-content: center;
+    }
+
+    .yc1,
+    .yc2,
+    .yc3 {
+        width: 100px;
+        position: relative;
+        margin-top: 325;
+        box-shadow: 9px 9px 10px;
+       
+    }
+
+    .jc1,
+    .jc2,
+    .jc3 {
+        width: 100px;
+        position: relative;
+
+        margin-top: 325;
+        box-shadow: 9px 9px 10px;
+    }
+
+    .fc1,
+    .fc2,
+    .fc3 {
+        width: 100px;
+        position: relative;
+
+        margin-top: 325;
+        box-shadow: 9px 9px 10px;
+    }
+
+    .newcard {
+        background-color: black;
+        width: 325px;
+        margin-top: 55;
+        margin-bottom: 50;
+        margin-left: 35;
+        box-shadow: 0 9px 10px black;
+        border-radius: 3%;
+       
+    }
+
+    .ncdesc {
+        color: white;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    h2 {
+        color: white;
+        font-size: medium;
+        text-align: center;
+    }
+
+    .ncard {
+        align-items: center;
+        width: 200px;
+        margin: 10px;
+        margin-left: 65;
+       
+    }
+
+    .trivia {
+        background-color: black;
+        width: 325px;
+        margin-top: 55;
+        margin-bottom: 50;
+        margin-left: 35;
+        box-shadow: 0 9px 10px black;
+        border-radius: 3%;
+    }
+
+    .th2 {
+        margin-top: 10px;
+    }
+
+    .tdesc {
+        color: white;
+        margin: 10px;
+        text-align: justify;
+
+    }
+}
