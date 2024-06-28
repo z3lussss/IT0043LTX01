@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.whole{
+    display: flex;
+}
+
+.racontainer {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.gapcontainer {
+    margin-bottom: 10px;
+}
+
+.subcontainer {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 10px;
+}
+
+.boxcontainer {
+    display: flex;
+    padding: 20px;
+    border: 2px solid green;
+    width: 275%;
+    height: 679px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+button {
+    background-color: green;
+    border-radius: 3px;
+    border: 1px solid gold;
+    box-shadow: rgba(255, 255, 255, .7) 0 1px 0 0 inset;
+    box-sizing: border-box;
+    color: yellow;
+    cursor: pointer;
+    display: inline-block;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.15385;
+    margin: 0;
+    outline: none;
+    padding: 8px .8em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    vertical-align: baseline;
+    white-space: nowrap;
+    width: 125px;
+}
+
+button:hover {
+    background-color: yellow;
+    color: green;
+}
+
+button:active {
+    background-color: yellow;
+    box-shadow: none;
+    color: green;
+}
+
+#box {
+    background-color: gold;
+    display: flex;
+    flex-direction: row;
+    height: 100px;
+    width: 100px;
+    border: 1px solid green;
+    border-radius: 10px;
+    font-size: 50px;
+    justify-content: center;
+    padding: 20px;
+}
+
+#ra {
+    width: 539px;
+    height: 50px;
+}
+
+#dec,
+#res,
+#inc {
+    width: 177;
+}
+
+#dec,
+#res,
+#inc,
+#ga {
+    padding: 15px;
+}
+
+#row,
+#col,
+#start1,
+#center1,
+#end1,
+#sb,
+#sa,
+#se,
+#start2,
+#center2,
+#end2 {
+    display: grid;
+    margin-top: 10px;
+    padding: 15px;
+
+}
+
+#fgres {
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+#fg {
+    margin-bottom: 10px;
+}
+
+#fgres,
+#ga {
+    width: 265px;
+}
+
+p {
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+label {
+    font-size: 20px;
+    font-family: -apple-system, system-ui, "Segoe UI", "Liberation Sans", sans-serif;
+    font-weight: bold;
+}
+
+#gapcounter {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    width: 485px;
+    height: 40px;
+}
+
+#box1,
+#box2,
+#box3 {
+    width: 107px;
+    height: 40px;
+}
+
+

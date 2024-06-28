@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLEXBOX SIMULATOR</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="whole">
+    <div class="maincontainer">
+        <div class="racontainer">
+            <button id="ra">RESET ALL</button>
+        </div>
+        <div class="gapcontainer">
+            <label for="gap">GAP: </label>
+            <input type="number" id="gapcounter" value="0" disabled>
+            <div class="gapbutton">
+                <button id="dec">-</button>
+                <button id="res">RESET</button>
+                <button id="inc">+</button>
+            </div>
+        </div>
+        <div class="subcontainer">
+            <div class="fdcontainer">
+                <p id="fd">FLEX DIRECTION</p>
+                <div class="fdbutton">
+                    <button id="row">ROW</button>
+                    <button id="col">COLUMN</button>
+                </div>
+            </div>
+            <div class="jccontainer">
+                <p id="jc">JUSTIFY CONTENT</p>
+                <div class="jcbuttons">
+                    <button id="start1">START</button>
+                    <button id="center1">CENTER</button>
+                    <button id="end1">END</button>
+                    <button id="sb">SPACE BETWEEN</button>
+                    <button id="sa">SPACE AROUND</button>
+                    <button id="se">SPACE EVENLY</button>
+                </div>
+            </div>
+            <div class="aicontainer">
+                <p id="ai">ALIGN ITEMS</p>
+                <div class="aibutton">
+                    <button id="start2">START</button>
+                    <button id="center2">CENTER</button>
+                    <button id="end2">END</button>
+                </div>
+            </div>
+        </div><!-- sub end div -->
+        <div class="fgcontainer">
+            <p id="fg">FLEX GROW</p>
+            <div class="fgbutton">
+                <button id="fgres">RESET</button>
+                <button id="ga">GROW ALL</button>
+            </div>
+            <div class="fgbox">
+                <label for="box1">BOX 1: </label>
+                <input type="number" id="box1" value="0">
+                <label for="box1">BOX 2: </label>
+                <input type="number" id="box1" value="0">
+                <label for="box1">BOX 3: </label>
+                <input type="number" id="box3" value="0">
+            </div>
+        </div>
+    </div> <!-- main1 end div -->
+    <div class="maincontainer2">
+        <div class="boxcontainer">
+            <div class="one" id="box">1</div>
+            <div class="two" id="box">2</div>
+            <div class="three" id="box">3</div>
+        </div>
+    </div> <!-- main2 end div -->
+</div>
+
+<script src="javascript.js"></script>
+</body>
+
+</html>
